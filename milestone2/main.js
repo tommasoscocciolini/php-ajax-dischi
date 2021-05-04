@@ -13,21 +13,20 @@ var app= new Vue({
       });
     },
   },
-  created() {
 
+  mounted() {
     axios.get('http://localhost/php-ajax-dischi/milestone2/call.php')
         .then((result) => {
           //console.log(response.data);
-          var disksObjArray = [result.data.response];
+          //var disksObjArray = [result.data.response];
           //console.log(disksObjArray[0]);
-          this.disks = [...disksObjArray];
+          this.disks = result.data.response;
           console.log(this.disks);
           // for (var i = 0; i < disksObjArray.length; i++) {
           //   if (!this.genres.includes(disksObjArray[i].genre)) {
           //     this.genres.push(disksObjArray[i].genre)
           //   }
           // }
-
         });
   }
 });

@@ -9,4 +9,6 @@ echo json_encode([
   "success" => true,
 ]);
 
+//echo json_encode($database);
+
 ?>
