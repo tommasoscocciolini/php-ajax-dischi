@@ -1,5 +1,6 @@
 <?php
 include_once __DIR__ .'/dati.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -47,5 +48,7 @@ include_once __DIR__ .'/dati.php';
       <?php
     } ?>
   </div>
+
+  
 </body>
 </html>
